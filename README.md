@@ -46,5 +46,9 @@ pitch_load.R
 
 This function produces the pitchers load over the previous 7-days. The function only takes in an end date and outputs a table with each row being a pitcher and the columns being the days. The last two columns are total pitch counts from the last 3 days and from the last 7 days. Pitcher's with heavy workloads (pitching in back-to-back days or three of the previous four) are flagged in red.
 
+This function (see lines 11 - 22 in MainFile.R) outputs a list where [[1]] is the image (i.e., .png) and [[2]] is the .csv version.
+
+
+
 
 
