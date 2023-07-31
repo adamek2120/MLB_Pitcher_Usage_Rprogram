@@ -18,7 +18,7 @@ This project is broken down into multiple parts:
 
 Three separate csv files were generated from the baseballr package. Note that for this example, these three files were generated from the 2022 MLB season. The columns for the three files are below:
 
-player_;ookup.csv
+player_lookup.csv
 *  player_id
 *  name
 *  throws
@@ -42,7 +42,9 @@ pitches.csv
 
 ## Functions
 
-pitcher_usage_function.R
+pitch_load.R
 
-This function takes in the three csv files along with a start and end date. The function then outputs a dataframe summarizing each pitcher's usage, number of games, number of pitches, and average fastball vel.
+This function produces the pitchers load over the previous 7-days. The function only takes in an end date and outputs a table with each row being a pitcher and the columns being the days. The last two columns are total pitch counts from the last 3 days and from the last 7 days. Pitcher's with heavy workloads (pitching in back-to-back days or three of the previous four) are flagged in red.
+
+
 
